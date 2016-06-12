@@ -1,0 +1,41 @@
+#header{
+    border: 2px solid Red;
+}
+
+.logoHead{
+    
+    font-family: 'Arial';
+    font-size: xx-large ;
+    color: brown;
+}
+#middle{
+    border: 2px solid Red;
+    float:none;
+    background: #c6ffc6;
+    padding: 10px;
+    height: 300px;
+}
+#left{
+    border: 2px solid Red;
+    margin-right: 5px;
+    overflow-y: auto;
+    float: left;
+    background: yellow;
+}
+#center{
+    border: 2px solid Red;
+    margin-right: 5px;
+    overflow-y: auto;
+    float:inherit;
+    background: lightgray;
+}
+#right{
+    border: 2px solid Red;
+    margin-right: 5px;
+    overflow-y: auto;
+    float: right;
+    background: orange;
+}
+#footer{
+    border: 2px solid Red;
+}
