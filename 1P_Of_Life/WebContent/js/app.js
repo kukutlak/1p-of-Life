@@ -1,12 +1,14 @@
 var myApp = angular.module('1PHomeApp',['ngRoute','ngMaterial', 'ngMessages', 'material.svgAssetsCache']);
 myApp.config(['$routeProvider', function($routeProvider){
     
-//    $routeProvider
-//        .when('/childInfo',{templateUrl:'ChildMaster.html', controller='MasterDetailCtrl'})
-//        .when('/left',{templateUrl:'leftPanel.html'})
+    $routeProvider
+        .when('/pro',{templateUrl:'pro.html',controller:'proCtrl'})
+        .otherwise ({redirectTo:'/'});
+    
 //        .when('/right', {templateUrl:'rightPanel.html'})
-//        
-//        .otherwise ({redirectTo:'/'});
+//        .when('/childInfo',{templateUrl:'ChildMaster.html', controller='MasterDetailCtrl'})
+        
+        
     
 }]);
 

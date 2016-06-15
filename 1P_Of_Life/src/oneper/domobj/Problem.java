@@ -4,6 +4,7 @@ import java.util.GregorianCalendar;
 
 public class Problem{
 	
+	public Problem(){}
 	public Problem(String iD, String type, float cost, GregorianCalendar expiryDate) {
 		super();
 		this.iD = iD;
