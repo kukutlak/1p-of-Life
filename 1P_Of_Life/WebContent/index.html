@@ -3,7 +3,9 @@
 <head>
 <!--<meta charset="ISO-8859-1">-->
     <meta charset="UTF-8">
-<title>Technology meant to help people, why not </title>
+
+<link rel="icon" href="images/icnOffice.png">
+<title>Donnect</title>
 
 
 <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js'></script>
@@ -30,6 +32,8 @@
         header
         <img src="images/icnOffice.png">
         <B class='logoHead'>Technology meant to help people, why not orp...</B>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nsub;&ne;&ne;&ne;&ne;&ne;&ne;&ne;&ne;&ne;&ne;&sub;&sup;
+        <B>Donate by Connect &nbsp; &hArr; &nbsp; per ur conveniance</B>
         
         <div ng-controller="DemoBasicCtrl as ctrl" ng-cloak="" class="menuBardemoBasicUsage" >
           <md-toolbar class="md-menu-toolbar">
@@ -61,6 +65,7 @@
                       </md-menu-item>
                       </md-menu-content>
                     </md-menu>
+                    
                     <md-menu>
                     <button ng-click="$mdOpenMenu()">
                       Books for
@@ -79,6 +84,26 @@
                       </md-menu-item>
                       </md-menu-content>
                     </md-menu>
+                    
+                    <md-menu>
+                    <button ng-click="$mdOpenMenu()">
+                      Problem of 
+                    </button>
+                    <md-menu-content>
+                      <md-menu-item>
+                        <md-button ng-click="ctrl.sampleAction('share', $event)">
+                          Home Needs
+                        </md-button>
+                      </md-menu-item>
+                      <md-menu-divider></md-menu-divider>
+                      <md-menu-item>
+                        <md-button ng-click="ctrl.sampleAction('share', $event)">
+                          Transport
+                        </md-button>
+                      </md-menu-item>
+                      </md-menu-content>
+                    </md-menu>
+                    
                   </md-menu-bar>
                 </div>
               </div>
