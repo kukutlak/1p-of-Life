@@ -1,4 +1,6 @@
-var myApp = angular.module('1PHomeApp', ['ngRoute']);
+var myApp = angular.module('1PHomeApp');
+
+//var myApp = angular.module('1PHomeApp', ['ngRoute']);
 
 //  Force AngularJS to call our JSON Web Service with a 'GET' rather than an 'OPTION' 
 //  Taken from: http://better-inter.net/enabling-cors-in-angular-js/
@@ -23,4 +25,9 @@ myApp.controller('proCtrl', function($scope, $http){
             alert("$http not received any data");
     
         });
+    
+    $scope.selectCustomer = function(pro){
+        $scope.selectedPro = pro.iD;
+        
+    }
 });

@@ -17,7 +17,7 @@
     <h3> Problems List </h3>
     <div id="divMasterDetailWrapper1" ng-controller="proCtrl" style="position:relative;">
     
-    <div id="divMasterView1">
+    <div id="divMasterView">
         Master View    
         <div id="{{pro.iD}}"
              class="cssOneCompanyRecord"
@@ -32,8 +32,11 @@
         </div>
         
     </div>
-    <div id="proDetailsView">
+    <div id="divDetailView">
         Details View
+        
+        <h1>{{selectedPro}}</h1>
+        <h3> Problem description</h3>
     </div>
     
     </div>

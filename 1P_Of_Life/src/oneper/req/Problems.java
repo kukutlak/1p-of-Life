@@ -44,6 +44,7 @@ public class Problems {
 		ObjectMapper mapper = new ObjectMapper();
 		String jsonInString="Jackson problem in mapper";
 		try {
+			//http://www.mkyong.com/java/how-to-convert-java-object-to-from-json-jackson/
 			jsonInString = mapper.writeValueAsString(problems);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
