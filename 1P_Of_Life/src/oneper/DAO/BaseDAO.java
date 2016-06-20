@@ -13,6 +13,7 @@ public class BaseDAO {
 
 	public Connection getConnection(){
 		
+		//http://www.codejava.net/java-se/jdbc/connect-to-apache-derby-java-db-via-jdbc
 		System.out.println(BaseDAO.class.getClassLoader().getResource("org.apache.derby.jdbc.EmbeddedDriver"));
 		
 		ClassLoader cl=ClassLoader.getSystemClassLoader();

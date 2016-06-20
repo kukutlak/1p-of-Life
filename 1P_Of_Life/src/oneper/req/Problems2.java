@@ -1,6 +1,5 @@
 package oneper.req;
 
-import java.awt.PageAttributes.MediaType;
 import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -11,7 +10,6 @@ import java.util.List;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 
 import org.codehaus.jackson.map.ObjectMapper;
@@ -22,25 +20,21 @@ import oneper.domobj.ProblemsList;
 
 //http://stackoverflow.com/questions/1300780/adding-a-directory-to-tomcat-classpath - still not working.
 
-@Path("/problem")
-public class Problems {
+@Path("/problem2")
+public class Problems2 {
 	List<Problem> list = new ArrayList<>();
 	
 	@Path("/count")
 	@GET
-	@Produces(javax.ws.rs.core.MediaType.APPLICATION_JSON)
 	public Response getCount(){
-		Problem problem1 = new Problem("P1","T1",1.0F, new GregorianCalendar());
-		Problem problem2 = new Problem("P1","T1",1.0F, new GregorianCalendar());
-		list.add(problem1);
-		list.add(problem2);
+		Problem problem = new Problem("P1","T1",1.0F, new GregorianCalendar());
+		list.add(problem);
 		//String result = String.valueOf(list.size()); 
 		return Response.status(200).entity(list.size()).build();
 	}
 	
 	@Path("/{index}")
 	@GET
-	@Produces(javax.ws.rs.core.MediaType.APPLICATION_JSON)
 	public Response getProblem(@PathParam("index") int index){
 		Problem problem = new Problem("P1","T1",1.0F, new GregorianCalendar());
 		

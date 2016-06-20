@@ -1,0 +1,6 @@
+//GitHUB  location
+https://github.com/kukutlak/1p-of-Life/tree/master/1P_Of_Life/WebContent
+
+//Apache Config Jars
+http://stackoverflow.com/questions/1300780/adding-a-directory-to-tomcat-classpath
+
