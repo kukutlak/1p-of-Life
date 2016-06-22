@@ -9,7 +9,7 @@ import javax.ws.rs.core.Application;
 import oneper.req.Sponser;
 import oneper.req.Problems;
 
-@ApplicationPath("/")
+@ApplicationPath("/rest")
 public class OnePApp extends Application {
     public OnePApp() {}
     public Set<Class<?>> getClasses(){

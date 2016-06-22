@@ -12,12 +12,13 @@ myApp.config(['$routeProvider', function($routeProvider){
     
 }]);
 
-myApp.controller('1PHomeController',function($scope,$timeout){
+myApp.controller('1PHomeController',function($scope,$timeout,$location){
     
-    $scope.x = 'Stu1';
-    $scope.y= 'Stu2';
+    $scope.x = 'x : '+ $location.protocol();
+    $scope.y = 'y : '+ $location.host();
+    $scope.z = 'z : '+ $location.port();
     $scope.Pname="fromController";
-    
+       
 })
 
 angular

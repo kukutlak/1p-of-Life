@@ -10,12 +10,21 @@ myApp.config(['$httpProvider', function ($httpProvider) {
 }]);
 
 
-myApp.controller('proCtrl', function($scope, $http){
+myApp.controller('proCtrl', function($scope, $http,$location){
     
     $scope.proList = null;
     $scope.selectedPro = null;
+    
+    var restUrl =  '/rest/problem/2';
+    if($location.host()=='localhost'){
+    	restUrl = '/oneplife' + restUrl;
+    }
+    alert(restUrl);
    
-    $http.get('http://localhost:8080/1P_Of_Life/rest/problem/2')
+    $http.get(restUrl)
+    //$http.get('http://oneplife.mybluemix.net/rest/problem/2')
+    
+    
         .success(function(data){
             $scope.proList = data.proList;
             $scope.selectedPro = $scope.proList[0].iD;
@@ -23,6 +32,8 @@ myApp.controller('proCtrl', function($scope, $http){
         })
         .error(function(data, statu, headers,config){
             alert("$http not received any data");
+            
+            
     
         });
     
